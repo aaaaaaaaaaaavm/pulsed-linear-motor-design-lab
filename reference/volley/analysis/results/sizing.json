@@ -1,0 +1,101 @@
+{
+  "capacitor": {
+    "C_required_F": 6.0,
+    "C_selected_F": 6.0,
+    "consistent": true,
+    "C_for_4p9pct_sag_F": 6.47,
+    "sag_pct": 5.3,
+    "cells_series": 32,
+    "cell_V": 3.0,
+    "cell_F": 190
+  },
+  "magnet_bond": {
+    "block_mass_g": 64.8,
+    "shear_N": 127.1,
+    "bond_area_cm2": 10.8,
+    "stress_MPa": 0.118,
+    "allowable_MPa": 10.0,
+    "margin": 84.0
+  },
+  "inter_array": {
+    "pressure_kPa": 88.0,
+    "force_kN": 2.69,
+    "plate_stress_MPa": 24.0,
+    "Ti_yield_MPa": 880.0,
+    "margin": 28.1,
+    "superseded_analytic_N": 3683,
+    "a4_applied_load_N": 3672,
+    "source": "validation/A12_inter_array_force.md"
+  },
+  "arrest": {
+    "axial_kN": 18.53,
+    "roller_pair_N": 1482.0
+  },
+  "abort_latch": {
+    "load_N": 413.0,
+    "fastener": "M4 A-286",
+    "capacity_N": 7900.0,
+    "margin": 8.6
+  },
+  "retention_gate": {
+    "load_kN": 5.89,
+    "n_pins": 2,
+    "pin_dia_mm": 6.0,
+    "capacity_kN": 18.2,
+    "margin": 1.2
+  },
+  "track_mode": {
+    "pinned_pinned_Hz": 48.0,
+    "fixed_fixed_Hz": 109.0,
+    "EI_kNm2": 63.3,
+    "target_Hz": 70
+  },
+  "gap_tolerance": {
+    "decay_k_per_m": 131.0,
+    "sensitivity_pct_per_mm": 13.1,
+    "shim_spec_mm": 0.05,
+    "thrust_spread_pct": 0.65
+  },
+  "magnet_temperature": {
+    "alpha_pct_per_K": -0.11,
+    "dT_K": 40,
+    "Kt_drift_pct": -4.4,
+    "K_needed_kA": 132.0,
+    "K_rated_kA": 140.0,
+    "within_rating": true
+  },
+  "thermal": {
+    "campaign_kJ": 24.3,
+    "bulk_rise_K": 1.8,
+    "fin_mass_kg": 0.34,
+    "fin_adiabatic_dT_K": 7.0,
+    "radiator_m2": 0.32
+  },
+  "energy_closure": {
+    "KE_payload_J": 537.0,
+    "KE_sled_J": 1268.0,
+    "KE_to_brake_J": 935.0,
+    "regen_recovered_J": 291.0,
+    "copper_J": 850.0,
+    "esr_J": 91.0,
+    "converter_J": 111.0,
+    "aux_J": 35.0,
+    "accounted_J": 2558.0,
+    "drawn_gross_J": 2850.9,
+    "drawn_net_J": 2559.5,
+    "closure_pct": 100.0
+  },
+  "pole_pitch": {
+    "32mm": 0.244,
+    "40mm": 0.279,
+    "48mm": 0.296,
+    "56mm": 0.302,
+    "64mm": 0.302
+  },
+  "track_length": {
+    "1.0m": 12.9,
+    "1.2m": 14.4,
+    "1.5m": 16.4,
+    "1.8m": 18.2
+  }
+}

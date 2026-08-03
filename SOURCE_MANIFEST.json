@@ -1,0 +1,111 @@
+{
+  "source_repository": "aaaaaaaaaaaavm/VOLLEY",
+  "base_commit": "d82877af803ab591217514c17c8186f1098e025d",
+  "snapshot_date": "2026-08-03",
+  "snapshot_kind": "reviewed working-tree snapshot",
+  "working_tree_changed_paths": 76,
+  "note": "The snapshot includes reviewed numerical corrections not yet represented by a VOLLEY commit. File hashes below, not an invented commit identifier, define it.",
+  "snapshot_sha256": "d89a361dbb0a462a0c34720ac1b346f6eb9a4a7d872cc17f567cac9e507e7e12",
+  "files": [
+    {
+      "path": "reference/volley/analysis/mass_properties.py",
+      "sha256": "c5b8af73f67d1e3721999ec0f5363d375752d040b0baa682da84d3fabf407422",
+      "bytes": 5094
+    },
+    {
+      "path": "reference/volley/analysis/motor_model.py",
+      "sha256": "e9475bec37f83fa9e1c78c99968ac599504bd492ee891d4e61f651d94a4b047b",
+      "bytes": 19214
+    },
+    {
+      "path": "reference/volley/analysis/results/field_verification.json",
+      "sha256": "e6026354b39c5bfe6045ec41dc19256210f0b65157ba25c071f3cb365f9c2e04",
+      "bytes": 567
+    },
+    {
+      "path": "reference/volley/analysis/results/mass_properties.json",
+      "sha256": "318be7dd011ed3f3efbf54aee9a7da886c76d9f04766b622c17150e23cf8bb11",
+      "bytes": 1594
+    },
+    {
+      "path": "reference/volley/analysis/results/motor_results.json",
+      "sha256": "af3fbd8108be79593d15c57e5d290e846a9f9c4f8d4b369e57e316e220c593e5",
+      "bytes": 1290
+    },
+    {
+      "path": "reference/volley/analysis/results/sizing.json",
+      "sha256": "aa00712e6c82b6a7bf0c0d9cfd5bd5ff7862812c39ee755ab69edc4b7a8d2a04",
+      "bytes": 2211
+    },
+    {
+      "path": "reference/volley/analysis/results/velocity_levers.json",
+      "sha256": "fcc32cad41d685c612132278bbfde66456017d2e0c0021782fdec9b83249b9cb",
+      "bytes": 3930
+    },
+    {
+      "path": "reference/volley/analysis/sizing.py",
+      "sha256": "2064c0f017b9c12dbac34f570185a0df54512cfe1d8b3694ebdeac08698dd8c0",
+      "bytes": 17693
+    },
+    {
+      "path": "reference/volley/analysis/velocity_levers.py",
+      "sha256": "3181d4266654f888417f22e3ce37130f345f870860dec6bc3346ab64661479f9",
+      "bytes": 9241
+    },
+    {
+      "path": "reference/volley/analysis/verify_field.py",
+      "sha256": "8f9c6dd2db30d25397b9d8bf9df474797fbd53c6307cdaf62a8d3564417ee2b8",
+      "bytes": 4720
+    },
+    {
+      "path": "reference/volley/paper/figures/F01_shot.png",
+      "sha256": "826a48c20554a37defe1fe1fa00530829b16e6d7d8aedc1e0b291e366c87b389",
+      "bytes": 137961
+    },
+    {
+      "path": "reference/volley/paper/figures/F02_ripple.png",
+      "sha256": "aaff61c9d30af3349fd9ecc18cf7b42c8b4f9907916bc3a42dcf93262a4e5373",
+      "bytes": 97702
+    },
+    {
+      "path": "reference/volley/paper/figures/F08_brake.png",
+      "sha256": "89216d6962397df42724906df4d76b583641ad6421d6d1680bc21460bf73ef8e",
+      "bytes": 116559
+    },
+    {
+      "path": "reference/volley/validation/fem/a1_airgap_field.py",
+      "sha256": "b749323a587f1cc866dcd7550ad0c8357a647cbddf804116ec8be15eb77066c7",
+      "bytes": 14716
+    },
+    {
+      "path": "reference/volley/validation/magpylib/check_inter_array_force.py",
+      "sha256": "0279472e22e3e3a43455f7cdb9efd69ddd9d0ce98725f954cf973e5739260701",
+      "bytes": 4572
+    },
+    {
+      "path": "reference/volley/validation/magpylib/maxwell_surface_force.py",
+      "sha256": "a77e5b95f7f5fd6e09d645c46d265dd0093c6282327615b6d85e61968641c2dd",
+      "bytes": 7646
+    },
+    {
+      "path": "reference/volley/validation/results/A12_inter_array_force.json",
+      "sha256": "f20792c2661612ac59b0c85d742c69efcb63d3fb5fcb6812d1d5c00594037905",
+      "bytes": 2773
+    },
+    {
+      "path": "reference/volley/validation/results/A1_femm.json",
+      "sha256": "e3544fcf8c7eff90513241b8a298bc63b0380d3302fa0085d9d5969bb1a8c2b6",
+      "bytes": 2560
+    },
+    {
+      "path": "reference/volley/validation/results/A8_pulse.json",
+      "sha256": "3a810190e0cd3c024d204c3ba50987f7fe2cb4888a14bed6787782767abc9642",
+      "bytes": 2349
+    },
+    {
+      "path": "reference/volley/validation/spice/emocd_shot.cir",
+      "sha256": "7324b823c82cf375b2f9c12de3a82c4133da1febf206afc4b7dfc3e2bd0ed737",
+      "bytes": 1419
+    }
+  ]
+}
