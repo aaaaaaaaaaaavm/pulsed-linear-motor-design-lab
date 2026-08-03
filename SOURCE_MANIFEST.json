@@ -5,7 +5,7 @@
   "snapshot_kind": "commit snapshot",
   "working_tree_changed_paths": 0,
   "note": "Every retained file is byte-identical to the corresponding blob in VOLLEY commit aa22a06. Per-file SHA-256 hashes and the aggregate snapshot hash provide a second identity check.",
-  "snapshot_sha256": "d89a361dbb0a462a0c34720ac1b346f6eb9a4a7d872cc17f567cac9e507e7e12",
+  "snapshot_sha256": "a9a07ffda2908063298eeefeb515e96621a110f79c28933c0203a8a4aa836ea7",
   "files": [
     {
       "path": "reference/volley/analysis/mass_properties.py",
@@ -19,28 +19,28 @@
     },
     {
       "path": "reference/volley/analysis/results/field_verification.json",
-      "sha256": "e6026354b39c5bfe6045ec41dc19256210f0b65157ba25c071f3cb365f9c2e04",
-      "bytes": 567
+      "sha256": "22f434835a31c50586144f20afd04499c4ac4af18d4d97f33365d2dd495a82e8",
+      "bytes": 543
     },
     {
       "path": "reference/volley/analysis/results/mass_properties.json",
-      "sha256": "318be7dd011ed3f3efbf54aee9a7da886c76d9f04766b622c17150e23cf8bb11",
-      "bytes": 1594
+      "sha256": "faefc797fc980723e77b730ef01591519d382686efb9d926424da0c86ad8d169",
+      "bytes": 1496
     },
     {
       "path": "reference/volley/analysis/results/motor_results.json",
-      "sha256": "af3fbd8108be79593d15c57e5d290e846a9f9c4f8d4b369e57e316e220c593e5",
-      "bytes": 1290
+      "sha256": "97cec2f4ba46c506304fe23c2d7930141c35096949efc685f075074bb36a744f",
+      "bytes": 1229
     },
     {
       "path": "reference/volley/analysis/results/sizing.json",
-      "sha256": "aa00712e6c82b6a7bf0c0d9cfd5bd5ff7862812c39ee755ab69edc4b7a8d2a04",
-      "bytes": 2211
+      "sha256": "964a0d7a0d55db1f334948aaf19d6dc2803891ed07cf878c48fc1198ebe074a8",
+      "bytes": 2111
     },
     {
       "path": "reference/volley/analysis/results/velocity_levers.json",
-      "sha256": "fcc32cad41d685c612132278bbfde66456017d2e0c0021782fdec9b83249b9cb",
-      "bytes": 3930
+      "sha256": "7ff1657dd41d8768f1bb12f4dc1a3d7e06572cd93c5b99313634c9e356c8fec9",
+      "bytes": 3773
     },
     {
       "path": "reference/volley/analysis/sizing.py",
@@ -54,8 +54,8 @@
     },
     {
       "path": "reference/volley/analysis/verify_field.py",
-      "sha256": "8f9c6dd2db30d25397b9d8bf9df474797fbd53c6307cdaf62a8d3564417ee2b8",
-      "bytes": 4720
+      "sha256": "dbf935ff1a37a50221fb9029054661129f5db18624d693910ef158e5cef19ed1",
+      "bytes": 4609
     },
     {
       "path": "reference/volley/paper/figures/F01_shot.png",
@@ -89,23 +89,23 @@
     },
     {
       "path": "reference/volley/validation/results/A12_inter_array_force.json",
-      "sha256": "f20792c2661612ac59b0c85d742c69efcb63d3fb5fcb6812d1d5c00594037905",
-      "bytes": 2773
+      "sha256": "414ac348521a0662ba6d747dee3c75e358c716495eff491df734f5e76263fe34",
+      "bytes": 2638
     },
     {
       "path": "reference/volley/validation/results/A1_femm.json",
-      "sha256": "e3544fcf8c7eff90513241b8a298bc63b0380d3302fa0085d9d5969bb1a8c2b6",
-      "bytes": 2560
+      "sha256": "c09c9e919283b70b35e53a81c1a783d06a50d7fe40dfb6fd4276352cc7022643",
+      "bytes": 2471
     },
     {
       "path": "reference/volley/validation/results/A8_pulse.json",
-      "sha256": "3a810190e0cd3c024d204c3ba50987f7fe2cb4888a14bed6787782767abc9642",
-      "bytes": 2349
+      "sha256": "73a18269e1e0bba1565bfe8ccc3ab7f731d0bf47f3a2924c1acff71c422a641a",
+      "bytes": 2291
     },
     {
       "path": "reference/volley/validation/spice/emocd_shot.cir",
-      "sha256": "7324b823c82cf375b2f9c12de3a82c4133da1febf206afc4b7dfc3e2bd0ed737",
-      "bytes": 1419
+      "sha256": "188ef3beec59dbb40696ab64050dbbcde6319844141005ebb82b50d1698437df",
+      "bytes": 1381
     }
   ]
 }

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pulsed-linear-motor-design-lab"
-version = "0.1.1"
+version = "0.1.2"
 description = "Screening calculations and a traceable VOLLEY reference case for pulsed linear motors"
 readme = "README.md"
 requires-python = ">=3.11"
