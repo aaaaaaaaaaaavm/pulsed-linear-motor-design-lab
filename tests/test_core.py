@@ -9,7 +9,9 @@ from plmd import calculate
 class ScreeningTests(unittest.TestCase):
     def case(self):
         root = Path(__file__).resolve().parents[1]
-        return json.loads((root / "cases/volley_reference.json").read_text())
+        return json.loads(
+            (root / "cases/volley_reference.json").read_text(encoding="utf-8")
+        )
 
     def test_screen_agrees_with_corrected_reference_within_one_centimetre_per_second(self):
         result = calculate(self.case())
@@ -28,4 +30,25 @@ class ScreeningTests(unittest.TestCase):
 
     def test_payload_energy_is_below_total_moving_energy(self):
         result = calculate(self.case())
-        self.assertLess(result["payload_kinetic_energy_J"], result["moving_kinetic_energy_J"])
+        self.assertLess(
+            result["payload_kinetic_energy_J"],
+            result["moving_kinetic_energy_J"],
+        )
+
+    def test_missing_input_is_named(self):
+        case = self.case()
+        del case["force_limit_N"]
+        with self.assertRaisesRegex(ValueError, "force_limit_N"):
+            calculate(case)
+
+    def test_non_physical_force_is_rejected_before_the_square_root(self):
+        case = self.case()
+        case["force_limit_N"] = 0.0
+        with self.assertRaisesRegex(ValueError, "force_limit_N"):
+            calculate(case)
+
+    def test_non_finite_input_is_rejected(self):
+        case = self.case()
+        case["sheet_current_kA_m"] = math.inf
+        with self.assertRaisesRegex(ValueError, "sheet_current_kA_m"):
+            calculate(case)

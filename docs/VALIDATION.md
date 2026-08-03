@@ -2,7 +2,8 @@
 
 | Item | Method | Current outcome |
 |---|---|---|
-| Standalone screening core | closed-form limiting cases and corrected reference regression | PASS for the declared software tests |
+| Standalone screening core | zero-stroke, energy-bound and corrected-reference tests | PASS for the declared software tests |
+| Input boundary | missing, non-positive and non-finite input tests | PASS; invalid cases fail before a derived result |
 | A1 airgap field | scikit-fem 12.0.2 on a gmsh 4.15.2 mesh | **PARTIAL**; thrust agrees to 0.03%, two declared bands miss |
 | A8 pulsed power | ngspice 42 | **SUPERSEDED**; retained for history, predates the corrected operating point |
 | A10 source ESR | corrected Python shot sweep | **FAIL** for a purchasable single string |

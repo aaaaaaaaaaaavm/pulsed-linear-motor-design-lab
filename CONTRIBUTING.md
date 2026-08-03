@@ -1,11 +1,15 @@
 # Contributing
 
-I treat numerical outputs as engineering claims, not decoration. A change to `plmd`
-should include a limiting-case test, stated units, and an explanation of which assumption
-changed. Do not replace an unfavourable result by changing a tolerance after the run.
+I treat numerical outputs as engineering claims, not decoration. A change to `plmd` should
+state units, identify the assumption it changes and include a limiting case or rejection-path
+test. Do not replace an unfavourable result by moving a tolerance after the run.
 
-The files under `reference/volley/` are a hashed source snapshot. Change them only by
-rebuilding from a reviewed VOLLEY state and regenerating `SOURCE_MANIFEST.json`.
+Commit subjects should describe the engineering consequence. “Reject non-physical force
+inputs” is useful later; “update core.py” is not.
+
+The files under `reference/volley/` are retained from VOLLEY commit `aa22a06`. Change them only
+by selecting a later reviewed VOLLEY commit, copying its exact blobs and regenerating
+`SOURCE_MANIFEST.json`. A changed hash without that chain is a provenance break.
 
 Before proposing a release, run:
 

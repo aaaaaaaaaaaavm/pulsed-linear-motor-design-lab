@@ -1,12 +1,25 @@
 # Pulsed Linear Motor Design Lab: one page
 
-I separated the reusable screening question from VOLLEY's full spacecraft-deployer model:
-given moving mass, stroke, thrust constant, sheet current, source voltage and ESR, what
-velocity is physically reachable and can the source meet the requested peak power?
+I separated one reusable screening question from VOLLEY's full spacecraft-deployer model:
+given moving mass, stroke, thrust constant, sheet current, force limit, source voltage and ESR,
+what velocity is physically reachable, and can the source meet the requested peak power?
 
-The corrected VOLLEY reference case returns **16.388 m/s at 10.533 g**. The modelled
-12 mΩ bank clears the elementary maximum-power test; a representative 116 mΩ single
-string does not. That is a screening result, not a cell qualification or hardware result.
+| | |
+|---|---|
+| Corrected VOLLEY detailed result | **16.388 m/s at 10.533 g** |
+| Standalone constant-force screen | **16.391 m/s at 10.535 g** |
+| Declared regression band | 0.01 m/s and 0.01 g |
+| 12 mΩ source assumption | closes the elementary peak-power test |
+| 116 mΩ representative single string | **fails** the same test |
 
-The repository includes one independent desktop-stage example, source-hash verification,
-unit tests, corrected result fixtures, and visible PARTIAL, superseded and open outcomes.
+The 0.003 m/s agreement is a software regression result. It does not validate the field,
+converter, bank, winding, thermal path or mechanism.
+
+The evidence is deliberately mixed. A1 is PARTIAL: the corrected thrust constant agrees with
+the independent differential-FEM implementation to 0.03%, while two field bands remain missed.
+A8 is SUPERSEDED because the retained ngspice run predates the corrected operating point. A10
+FAILS for a purchasable single string. Nothing has been built or measured.
+
+The standalone package has no runtime dependency. The higher-fidelity reference files retain
+their exact tool versions, settings, hashes and VOLLEY commit identity under
+`reference/volley/` and `SOURCE_MANIFEST.json`.
