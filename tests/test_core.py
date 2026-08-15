@@ -15,8 +15,8 @@ class ScreeningTests(unittest.TestCase):
 
     def test_screen_agrees_with_corrected_reference_within_one_centimetre_per_second(self):
         result = calculate(self.case())
-        self.assertLess(abs(result["exit_velocity_m_s"] - 16.388), 0.01)
-        self.assertLess(abs(result["acceleration_g"] - 10.533), 0.01)
+        self.assertLess(abs(result["exit_velocity_m_s"] - 16.029), 0.01)
+        self.assertLess(abs(result["acceleration_g"] - 10.068), 0.01)
 
     def test_zero_stroke_has_zero_exit_velocity(self):
         case = self.case()

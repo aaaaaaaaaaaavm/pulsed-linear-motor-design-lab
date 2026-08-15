@@ -31,12 +31,12 @@ look more independent than it is.
 
 | Quantity | Standalone screen | Detailed VOLLEY reference |
 |---|---:|---:|
-| Exit velocity | 16.391 m/s | **16.388 m/s** |
-| Acceleration | 10.535 g | **10.533 g** |
+| Exit velocity | 16.024 m/s | **16.029 m/s** |
+| Acceleration | 10.071 g | **10.068 g** |
 | Source check at 12 mΩ | closes | modelled assumption |
 | Source check at 116 mΩ | **fails** | representative purchasable single string |
 
-The velocity difference is 0.003 m/s, inside the declared 0.01 m/s regression band. That is
+The velocity difference is 0.005 m/s, inside the declared 0.01 m/s regression band. That is
 model-to-model agreement, not a force, current or velocity measurement.
 
 A1 remains **PARTIAL** because two declared field bands missed. A8 is retained as a

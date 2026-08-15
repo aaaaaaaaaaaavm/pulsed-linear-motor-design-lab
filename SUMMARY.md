@@ -6,13 +6,13 @@ what velocity is physically reachable, and can the source meet the requested pea
 
 | | |
 |---|---|
-| Corrected VOLLEY detailed result | **16.388 m/s at 10.533 g** |
-| Standalone constant-force screen | **16.391 m/s at 10.535 g** |
+| Corrected VOLLEY detailed result | **16.029 m/s at 10.068 g** |
+| Standalone constant-force screen | **16.024 m/s at 10.071 g** |
 | Declared regression band | 0.01 m/s and 0.01 g |
 | 12 mΩ source assumption | closes the elementary peak-power test |
 | 116 mΩ representative single string | **fails** the same test |
 
-The 0.003 m/s agreement is a software regression result. It does not validate the field,
+The 0.005 m/s agreement is a software regression result. It does not validate the field,
 converter, bank, winding, thermal path or mechanism.
 
 The evidence is deliberately mixed. A1 is PARTIAL: the corrected thrust constant agrees with

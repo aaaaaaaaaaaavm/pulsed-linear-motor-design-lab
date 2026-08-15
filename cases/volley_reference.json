@@ -2,10 +2,10 @@
   "payload_mass_kg": 4.0,
   "carriage_mass_kg": 9.445,
   "stroke_m": 1.3,
-  "thrust_constant_N_per_kA_m": 11.025833,
+  "thrust_constant_N_per_kA_m": 10.538611,
   "sheet_current_kA_m": 140.0,
-  "force_limit_N": 1389.255,
-  "electrical_input_J": 2850.895,
+  "force_limit_N": 1327.865,
+  "electrical_input_J": 2782.391,
   "bank_voltage_V": 96.0,
   "bank_esr_ohm": 0.012,
   "peak_power_required_W": 30000.0
