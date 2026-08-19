@@ -76,10 +76,6 @@ force inputs, the realistic source-impedance failure and the payload-energy boun
 Read [validation](docs/VALIDATION.md), [toolchain](docs/TOOLCHAIN.md),
 [provenance](docs/PROVENANCE.md), and [open problems](OPEN_PROBLEMS.md) before using a result.
 
-## License
-
-MIT. External solvers are not vendored and retain their own licenses.
-
 ## Licence
 
 **CC BY 4.0** — full text in [`LICENSE`](LICENSE), attribution form in [`NOTICE`](NOTICE).
