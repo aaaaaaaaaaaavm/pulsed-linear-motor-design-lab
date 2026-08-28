@@ -1,6 +1,6 @@
 # Pulsed Linear Motor Design Lab
 
-<p align="center"><img src="reference/volley/paper/figures/F01_shot.png" alt="Corrected VOLLEY shot calculation" width="100%"></p>
+<p align="center"><img src="figures/design-screen.svg" alt="Pulsed linear motor first-order design screen for the desktop and VOLLEY reference cases" width="100%"></p>
 
 [![CI](https://github.com/aaaaaaaaaaaavm/pulsed-linear-motor-design-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/aaaaaaaaaaaavm/pulsed-linear-motor-design-lab/actions/workflows/ci.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
@@ -38,6 +38,12 @@ look more independent than it is.
 
 The velocity difference is 0.005 m/s, inside the declared 0.01 m/s regression band. That is
 model-to-model agreement, not a force, current or velocity measurement.
+
+<p align="center"><img src="reference/volley/paper/figures/F01_shot.png" alt="Corrected VOLLEY shot calculation" width="100%"></p>
+
+<p align="center"><sub>The overview is regenerated from both committed case files by
+<code>tools/generate_readme_figure.py</code>. The time history is the retained detailed VOLLEY
+reference. Both are model output; neither is experimental validation.</sub></p>
 
 A1 remains **PARTIAL** because two declared field bands missed. A8 is retained as a
 **superseded ngspice run** and is not presented as current. A10 shows that a purchasable

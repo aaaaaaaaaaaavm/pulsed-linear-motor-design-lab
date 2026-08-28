@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#07111b"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#3f718c"/></marker></defs>
+<text x="74" y="82" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="24" font-weight="700" text-anchor="start">PULSED LINEAR MOTOR DESIGN LAB</text>
+<text x="74" y="128" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="31" font-weight="600" text-anchor="start">A first rejection screen before higher-fidelity models are worth building.</text>
+<text x="74" y="166" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="400" text-anchor="start">Every value below is computed from the two committed case files.</text>
+<rect x="74" y="220" width="470" height="360" rx="18" fill="#0c1d2a" stroke="#38d6e8"/>
+<text x="102" y="268" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700" text-anchor="start">DESKTOP STAGE</text>
+<text x="102" y="318" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">MOVING MASS</text>
+<text x="516" y="318" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="23" font-weight="650" text-anchor="end">1.700 kg</text>
+<text x="102" y="372" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">APPLIED FORCE</text>
+<text x="516" y="372" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="23" font-weight="650" text-anchor="end">112.0 N</text>
+<text x="102" y="426" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">EXIT VELOCITY</text>
+<text x="516" y="426" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="23" font-weight="650" text-anchor="end">7.260 m/s</text>
+<text x="102" y="480" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">ACCELERATION</text>
+<text x="516" y="480" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="23" font-weight="650" text-anchor="end">6.72 g</text>
+<text x="102" y="526" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">THEVENIN SOURCE CEILING / REQUIRED PEAK</text>
+<text x="516" y="562" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="21" font-weight="700" text-anchor="end">2.88x  CLOSES</text>
+<rect x="584" y="220" width="470" height="360" rx="18" fill="#0c1d2a" stroke="#ffb454"/>
+<text x="612" y="268" fill="#ffb454" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700" text-anchor="start">VOLLEY REFERENCE</text>
+<text x="612" y="318" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">MOVING MASS</text>
+<text x="1026" y="318" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="23" font-weight="650" text-anchor="end">13.445 kg</text>
+<text x="612" y="372" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">APPLIED FORCE</text>
+<text x="1026" y="372" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="23" font-weight="650" text-anchor="end">1327.9 N</text>
+<text x="612" y="426" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">EXIT VELOCITY</text>
+<text x="1026" y="426" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="23" font-weight="650" text-anchor="end">16.024 m/s</text>
+<text x="612" y="480" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">ACCELERATION</text>
+<text x="1026" y="480" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="23" font-weight="650" text-anchor="end">10.07 g</text>
+<text x="612" y="526" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">THEVENIN SOURCE CEILING / REQUIRED PEAK</text>
+<text x="1026" y="562" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="21" font-weight="700" text-anchor="end">6.40x  CLOSES</text>
+<rect x="1094" y="220" width="432" height="360" rx="18" fill="#0c1d2a" stroke="#17384b"/>
+<text x="1122" y="268" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700" text-anchor="start">THE SCREEN</text>
+<rect x="1122" y="298" width="376" height="50" rx="10" fill="#0a1722" stroke="#17384b"/>
+<text x="1140" y="320" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="700" text-anchor="start">INPUTS</text>
+<text x="1140" y="339" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="400" text-anchor="start">mass · stroke · Kt · current</text>
+<line x1="1310" y1="348" x2="1310" y2="364" stroke="#3f718c" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1122" y="366" width="376" height="50" rx="10" fill="#0a1722" stroke="#17384b"/>
+<text x="1140" y="388" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="700" text-anchor="start">MECHANICS</text>
+<text x="1140" y="407" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="400" text-anchor="start">force → acceleration</text>
+<line x1="1310" y1="416" x2="1310" y2="432" stroke="#3f718c" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1122" y="434" width="376" height="50" rx="10" fill="#0a1722" stroke="#17384b"/>
+<text x="1140" y="456" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="700" text-anchor="start">OUTPUT</text>
+<text x="1140" y="475" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="400" text-anchor="start">velocity · kinetic energy</text>
+<line x1="1310" y1="484" x2="1310" y2="500" stroke="#3f718c" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1122" y="502" width="376" height="50" rx="10" fill="#0a1722" stroke="#17384b"/>
+<text x="1140" y="524" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="700" text-anchor="start">SOURCE</text>
+<text x="1140" y="543" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="400" text-anchor="start">V² / 4R ≥ peak power?</text>
+<rect x="74" y="626" width="1452" height="190" rx="18" fill="#091720" stroke="#21465b"/>
+<text x="104" y="674" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="700" text-anchor="start">WHAT A PASS MEANS</text>
+<text x="104" y="714" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="23" font-weight="550" text-anchor="start">The arithmetic is internally consistent and the assumed source clears a necessary power ceiling.</text>
+<text x="104" y="758" fill="#ff6b6b" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="700" text-anchor="start">WHAT IT DOES NOT MEAN</text>
+<text x="104" y="798" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="23" font-weight="550" text-anchor="start">No finite field, switching waveform, thermal path or hardware performance is established.</text>
+<text x="1494" y="860" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">MODEL OUTPUT · NOT EXPERIMENTAL VALIDATION</text>
+</svg>
