@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="860" viewBox="0 0 1600 860">
+<rect width="1600" height="860" fill="#07111b"/>
+<text x="72" y="78" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="24" font-weight="700" text-anchor="start">FORCE AND ENERGY ACCOUNTING</text>
+<text x="72" y="124" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="34" font-weight="600" text-anchor="start">The useful payload is only one part of the mass the field accelerates.</text>
+<text x="72" y="162" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="400" text-anchor="start">Bars are normalised inside each case; labels retain the computed SI values.</text>
+<rect x="72" y="218" width="704" height="516" rx="18" fill="#0c1d2a" stroke="#38d6e8"/>
+<text x="100" y="264" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700" text-anchor="start">DESKTOP STAGE</text>
+<text x="100" y="302" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="650" text-anchor="start">FORCE PATH</text>
+<text x="100" y="346" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">ELECTROMAGNETIC</text>
+<rect x="262" y="330" width="430.0" height="22" rx="11" fill="#38d6e8" opacity="0.88"/>
+<text x="732" y="347" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">112.0 N</text>
+<text x="100" y="404" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">APPLIED</text>
+<rect x="262" y="388" width="430.0" height="22" rx="11" fill="#38d6e8" opacity="0.88"/>
+<text x="732" y="405" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">112.0 N</text>
+<text x="100" y="462" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">FORCE LIMIT</text>
+<rect x="262" y="446" width="430.0" height="22" rx="11" fill="#8fa7ba" opacity="0.88"/>
+<text x="732" y="463" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">112.0 N</text>
+<text x="100" y="532" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="650" text-anchor="start">ENERGY PATH</text>
+<text x="100" y="576" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">PAYLOAD KINETIC</text>
+<rect x="262" y="560" width="31.5" height="22" rx="11" fill="#38d6e8" opacity="0.88"/>
+<text x="732" y="577" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">13.2 J</text>
+<text x="100" y="634" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">MOVING KINETIC</text>
+<rect x="262" y="618" width="107.0" height="22" rx="11" fill="#38d6e8" opacity="0.88"/>
+<text x="732" y="635" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">44.8 J</text>
+<text x="100" y="692" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">ELECTRICAL INPUT</text>
+<rect x="262" y="676" width="430.0" height="22" rx="11" fill="#8fa7ba" opacity="0.88"/>
+<text x="732" y="693" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">180.0 J</text>
+<text x="732" y="714" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="17" font-weight="700" text-anchor="end">payload efficiency 7.3%</text>
+<rect x="816" y="218" width="704" height="516" rx="18" fill="#0c1d2a" stroke="#ffb454"/>
+<text x="844" y="264" fill="#ffb454" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700" text-anchor="start">VOLLEY REFERENCE</text>
+<text x="844" y="302" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="650" text-anchor="start">FORCE PATH</text>
+<text x="844" y="346" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">ELECTROMAGNETIC</text>
+<rect x="1006" y="330" width="430.0" height="22" rx="11" fill="#ffb454" opacity="0.88"/>
+<text x="1476" y="347" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">1475.4 N</text>
+<text x="844" y="404" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">APPLIED</text>
+<rect x="1006" y="388" width="387.0" height="22" rx="11" fill="#38d6e8" opacity="0.88"/>
+<text x="1476" y="405" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">1327.9 N</text>
+<text x="844" y="462" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">FORCE LIMIT</text>
+<rect x="1006" y="446" width="387.0" height="22" rx="11" fill="#ff6b6b" opacity="0.88"/>
+<text x="1476" y="463" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">1327.9 N</text>
+<text x="844" y="532" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="650" text-anchor="start">ENERGY PATH</text>
+<text x="844" y="576" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">PAYLOAD KINETIC</text>
+<rect x="1006" y="560" width="79.4" height="22" rx="11" fill="#38d6e8" opacity="0.88"/>
+<text x="1476" y="577" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">513.6 J</text>
+<text x="844" y="634" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">MOVING KINETIC</text>
+<rect x="1006" y="618" width="266.8" height="22" rx="11" fill="#ffb454" opacity="0.88"/>
+<text x="1476" y="635" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">1726.2 J</text>
+<text x="844" y="692" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="600" text-anchor="start">ELECTRICAL INPUT</text>
+<rect x="1006" y="676" width="430.0" height="22" rx="11" fill="#8fa7ba" opacity="0.88"/>
+<text x="1476" y="693" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">2782.4 J</text>
+<text x="1476" y="714" fill="#ffb454" font-family="Inter,Segoe UI,sans-serif" font-size="17" font-weight="700" text-anchor="end">payload efficiency 18.5%</text>
+<rect x="72" y="770" width="1452" height="48" rx="12" fill="#091720" stroke="#21465b"/>
+<text x="98" y="801" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="start">CONSTANT-FORCE SCREEN · NO COPPER LOSS, SWITCHING WAVEFORM OR THERMAL PATH</text>
+</svg>

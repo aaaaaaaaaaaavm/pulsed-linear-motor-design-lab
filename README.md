@@ -39,6 +39,15 @@ look more independent than it is.
 The velocity difference is 0.005 m/s, inside the declared 0.01 m/s regression band. That is
 model-to-model agreement, not a force, current or velocity measurement.
 
+<p align="center">
+  <img src="figures/force-energy.svg" alt="Force and energy accounting for the desktop and VOLLEY screening cases" width="49%">
+  <img src="figures/source-window.svg" alt="Thevenin source-power ceiling against bank ESR for both committed cases" width="49%">
+</p>
+
+<p align="center"><sub>Left: what the field accelerates and where the assumed input energy goes.
+Right: the source-impedance boundary that decides whether the requested peak power is even
+available. Both are regenerated from the committed case files.</sub></p>
+
 <p align="center"><img src="reference/volley/paper/figures/F01_shot.png" alt="Corrected VOLLEY shot calculation" width="100%"></p>
 
 <p align="center"><sub>The overview is regenerated from both committed case files by

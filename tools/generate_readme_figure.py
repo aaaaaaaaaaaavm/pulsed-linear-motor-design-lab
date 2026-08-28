@@ -1,4 +1,4 @@
-"""Generate the README's first-order design-screen figure from the committed cases."""
+"""Generate the README visual set from the committed screening cases."""
 
 from __future__ import annotations
 
@@ -103,11 +103,119 @@ def render() -> str:
     return "\n".join(out) + "\n"
 
 
+def force_energy() -> str:
+    cases = [
+        ("DESKTOP STAGE", *load("desktop_stage.json"), CYAN),
+        ("VOLLEY REFERENCE", *load("volley_reference.json"), AMBER),
+    ]
+    out = [
+        '<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="860" viewBox="0 0 1600 860">',
+        f'<rect width="1600" height="860" fill="{BG}"/>',
+        text(72, 78, "FORCE AND ENERGY ACCOUNTING", 24, CYAN, 700),
+        text(72, 124, "The useful payload is only one part of the mass the field accelerates.", 34, INK, 600),
+        text(72, 162, "Bars are normalised inside each case; labels retain the computed SI values.", 19, MUTED),
+    ]
+    for i, (label, case, result, colour) in enumerate(cases):
+        x, y = 72 + i * 744, 218
+        out += [rect(x, y, 704, 516, stroke=colour), text(x + 28, y + 46, label, 18, colour, 700)]
+        force_rows = [
+            ("ELECTROMAGNETIC", result["electromagnetic_force_N"], colour),
+            ("APPLIED", result["applied_force_N"], CYAN),
+            ("FORCE LIMIT", case["force_limit_N"], RED if result["force_limited"] else MUTED),
+        ]
+        force_max = max(value for _, value, _ in force_rows)
+        out.append(text(x + 28, y + 84, "FORCE PATH", 13, MUTED, 650))
+        for row, (name, value, row_colour) in enumerate(force_rows):
+            yy = y + 112 + row * 58
+            out += [
+                text(x + 28, yy + 16, name, 13, MUTED, 600),
+                f'<rect x="{x + 190}" y="{yy}" width="{430 * value / force_max:.1f}" height="22" rx="11" fill="{row_colour}" opacity="0.88"/>',
+                text(x + 660, yy + 17, f"{value:.1f} N", 15, INK, 650, "end"),
+            ]
+        energy_rows = [
+            ("PAYLOAD KINETIC", result["payload_kinetic_energy_J"], CYAN),
+            ("MOVING KINETIC", result["moving_kinetic_energy_J"], colour),
+            ("ELECTRICAL INPUT", case["electrical_input_J"], MUTED),
+        ]
+        energy_max = max(value for _, value, _ in energy_rows)
+        out.append(text(x + 28, y + 314, "ENERGY PATH", 13, MUTED, 650))
+        for row, (name, value, row_colour) in enumerate(energy_rows):
+            yy = y + 342 + row * 58
+            out += [
+                text(x + 28, yy + 16, name, 13, MUTED, 600),
+                f'<rect x="{x + 190}" y="{yy}" width="{430 * value / energy_max:.1f}" height="22" rx="11" fill="{row_colour}" opacity="0.88"/>',
+                text(x + 660, yy + 17, f"{value:.1f} J", 15, INK, 650, "end"),
+            ]
+        out.append(text(x + 660, y + 496, f"payload efficiency {result['payload_efficiency_pct']:.1f}%", 17, colour, 700, "end"))
+    out += [
+        rect(72, 770, 1452, 48, fill="#091720", stroke="#21465b", radius=12),
+        text(98, 801, "CONSTANT-FORCE SCREEN · NO COPPER LOSS, SWITCHING WAVEFORM OR THERMAL PATH", 15, MUTED, 650),
+        "</svg>",
+    ]
+    return "\n".join(out) + "\n"
+
+
+def source_window() -> str:
+    cases = [
+        ("DESKTOP STAGE", *load("desktop_stage.json"), CYAN),
+        ("VOLLEY REFERENCE", *load("volley_reference.json"), AMBER),
+    ]
+    out = [
+        '<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="860" viewBox="0 0 1600 860">',
+        f'<rect width="1600" height="860" fill="{BG}"/>',
+        text(72, 78, "SOURCE-IMPEDANCE WINDOW", 24, CYAN, 700),
+        text(72, 124, "Thevenin power collapses as ESR rises: V² / 4R.", 34, INK, 600),
+        text(72, 162, "The crossing is a necessary source gate, not a converter or pulse simulation.", 19, MUTED),
+    ]
+    for i, (label, case, result, colour) in enumerate(cases):
+        x, y, w, h = 72 + i * 744, 220, 704, 500
+        left, top, plot_w, plot_h = x + 86, y + 78, 574, 318
+        out += [rect(x, y, w, h, stroke=colour), text(x + 28, y + 44, label, 18, colour, 700)]
+        required = case["peak_power_required_W"] / 1000.0
+        max_kw = max(required * 1.7, case["bank_voltage_V"] ** 2 / (4 * 0.005) / 1000.0)
+        out += [
+            f'<line x1="{left}" y1="{top + plot_h}" x2="{left + plot_w}" y2="{top + plot_h}" stroke="#365568"/>',
+            f'<line x1="{left}" y1="{top}" x2="{left}" y2="{top + plot_h}" stroke="#365568"/>',
+        ]
+        for tick in range(0, 151, 30):
+            xx = left + plot_w * tick / 150
+            out += [f'<line x1="{xx}" y1="{top + plot_h}" x2="{xx}" y2="{top + plot_h + 7}" stroke="#365568"/>', text(xx, top + plot_h + 29, str(tick), 12, MUTED, 400, "middle")]
+        points = []
+        for milliohm in range(5, 151, 2):
+            kw = case["bank_voltage_V"] ** 2 / (4 * milliohm / 1000.0) / 1000.0
+            xx = left + plot_w * milliohm / 150
+            yy = top + plot_h * (1.0 - min(kw / max_kw, 1.0))
+            points.append(f"{xx:.1f},{yy:.1f}")
+        req_y = top + plot_h * (1.0 - required / max_kw)
+        actual_mohm = case["bank_esr_ohm"] * 1000.0
+        actual_kw = result["source_power_ceiling_W"] / 1000.0
+        actual_x = left + plot_w * actual_mohm / 150.0
+        actual_y = top + plot_h * (1.0 - min(actual_kw / max_kw, 1.0))
+        threshold = case["bank_voltage_V"] ** 2 / (4.0 * case["peak_power_required_W"]) * 1000.0
+        out += [
+            f'<line x1="{left}" y1="{req_y:.1f}" x2="{left + plot_w}" y2="{req_y:.1f}" stroke="{RED}" stroke-width="2" stroke-dasharray="8 8"/>',
+            f'<polyline points="{" ".join(points)}" fill="none" stroke="{colour}" stroke-width="4"/>',
+            f'<circle cx="{actual_x:.1f}" cy="{actual_y:.1f}" r="9" fill="{INK}" stroke="{colour}" stroke-width="4"/>',
+            text(left, top - 14, f"power ceiling, max {max_kw:.1f} kW", 13, MUTED),
+            text(left + plot_w, req_y - 10, f"required {required:.1f} kW", 13, RED, 650, "end"),
+            text(left + plot_w, top + plot_h + 58, "bank ESR [mΩ]", 13, MUTED, 500, "end"),
+            text(x + 28, y + 452, f"committed: {actual_mohm:.0f} mΩ → {actual_kw:.1f} kW", 17, INK, 650),
+            text(x + 676, y + 452, f"gate closes below {threshold:.1f} mΩ", 17, colour, 700, "end"),
+        ]
+    out += [text(1494, 818, "SOURCE CEILING ONLY · MODEL OUTPUT", 15, MUTED, 650, "end"), "</svg>"]
+    return "\n".join(out) + "\n"
+
+
 def main() -> None:
-    output = ROOT / "figures" / "design-screen.svg"
-    output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(render(), encoding="utf-8")
-    print(output.relative_to(ROOT))
+    outputs = {
+        ROOT / "figures" / "design-screen.svg": render(),
+        ROOT / "figures" / "force-energy.svg": force_energy(),
+        ROOT / "figures" / "source-window.svg": source_window(),
+    }
+    for output, body in outputs.items():
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(body, encoding="utf-8")
+        print(output.relative_to(ROOT))
 
 
 if __name__ == "__main__":
