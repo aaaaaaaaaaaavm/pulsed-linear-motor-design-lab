@@ -47,6 +47,10 @@ _STRICTLY_POSITIVE = {
 def calculate(case: dict[str, float]) -> dict[str, float | bool]:
     """Evaluate one constant-force screening case.
 
+    Energy closure requires total moving kinetic energy <= supplied electrical energy.
+    With no other energy source, a failure rejects the prescribed force/stroke result;
+    exit_velocity_m_s remains the hypothetical result, not an attainable speed.
+    Equality is only an ideal lossless boundary, not a realizable design.
     The source test is the Thevenin maximum-power ceiling, V²/(4R). Passing it is necessary,
     not sufficient: no converter, current waveform or state-of-charge history is solved here.
     Invalid physical inputs are rejected before they can turn into a square-root or division
@@ -87,7 +91,14 @@ def calculate(case: dict[str, float]) -> dict[str, float | bool]:
         4.0 * values["bank_esr_ohm"]
     )
 
+    energy_closes = moving_ke <= values["electrical_input_J"]
+    power_closes = source_power_ceiling >= values["peak_power_required_W"]
+
     return {
+        "energy_closes": energy_closes,
+        "energy_margin_J": values["electrical_input_J"] - moving_ke,
+        "moving_energy_fraction": moving_ke / values["electrical_input_J"],
+        "screen_feasible": energy_closes and power_closes,
         "moving_mass_kg": moving_mass,
         "electromagnetic_force_N": electromagnetic_force,
         "applied_force_N": applied_force,
@@ -99,9 +110,7 @@ def calculate(case: dict[str, float]) -> dict[str, float | bool]:
         "moving_kinetic_energy_J": moving_ke,
         "payload_efficiency_pct": 100.0 * payload_ke / values["electrical_input_J"],
         "source_power_ceiling_W": source_power_ceiling,
-        "source_closes_at_peak": (
-            source_power_ceiling >= values["peak_power_required_W"]
-        ),
+        "source_closes_at_peak": power_closes,
     }
 
 

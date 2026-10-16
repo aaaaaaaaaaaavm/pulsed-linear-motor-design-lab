@@ -61,7 +61,7 @@ def render() -> str:
         metrics = [
             ("MOVING MASS", f"{result['moving_mass_kg']:.3f} kg"),
             ("APPLIED FORCE", f"{result['applied_force_N']:.1f} N"),
-            ("EXIT VELOCITY", f"{result['exit_velocity_m_s']:.3f} m/s"),
+            ("IMPLIED VELOCITY", f"{result['exit_velocity_m_s']:.3f} m/s"),
             ("ACCELERATION", f"{result['acceleration_g']:.2f} g"),
         ]
         for row, (name, value) in enumerate(metrics):
@@ -70,7 +70,7 @@ def render() -> str:
         ceiling = result["source_power_ceiling_W"]
         required = case["peak_power_required_W"]
         ratio = ceiling / required
-        status = "CLOSES" if result["source_closes_at_peak"] else "FAILS"
+        status = "POWER PASS" if result["source_closes_at_peak"] else "POWER FAIL"
         status_colour = CYAN if result["source_closes_at_peak"] else RED
         out += [
             text(x + 28, y + 306, "THEVENIN SOURCE CEILING / REQUIRED PEAK", 13, MUTED, 600),
@@ -83,7 +83,7 @@ def render() -> str:
         ("INPUTS", "mass · stroke · Kt · current"),
         ("MECHANICS", "force → acceleration"),
         ("OUTPUT", "velocity · kinetic energy"),
-        ("SOURCE", "V² / 4R ≥ peak power?"),
+        ("SOURCE", "power ceiling + total energy"),
     ]
     for i, (title, sub) in enumerate(nodes):
         yy = y + 78 + i * 68
@@ -94,7 +94,7 @@ def render() -> str:
     out += [
         rect(74, 626, 1452, 190, fill="#091720", stroke="#21465b"),
         text(104, 674, "WHAT A PASS MEANS", 15, CYAN, 700),
-        text(104, 714, "The arithmetic is internally consistent and the assumed source clears a necessary power ceiling.", 23, INK, 550),
+        text(104, 714, "Only total-energy and peak-power screens pass; losses and hardware remain unresolved.", 23, INK, 550),
         text(104, 758, "WHAT IT DOES NOT MEAN", 15, RED, 700),
         text(104, 798, "No finite field, switching waveform, thermal path or hardware performance is established.", 23, INK, 550),
         text(1494, 860, "MODEL OUTPUT · NOT EXPERIMENTAL VALIDATION", 15, MUTED, 650, "end"),

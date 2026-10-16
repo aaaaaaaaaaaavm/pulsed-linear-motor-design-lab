@@ -21,13 +21,13 @@ history. That is the right engineering record and the wrong reusable interface. 
 the smaller question that survives outside it:
 
 > Given moving mass, stroke, thrust constant, sheet current, force limit, source voltage and
-> ESR, what constant-force velocity is reachable, and can the source meet the requested peak
-> power?
+> ESR, what constant-force velocity is implied, and do total input energy and the source
+> peak-power ceiling permit that result?
 
 I kept the original scripts beside the smaller calculator rather than making the extraction
 look more independent than it is.
 
-## Current result, with the caveat attached
+## Historical reference regression
 
 | Quantity | Standalone screen | Detailed VOLLEY reference |
 |---|---:|---:|
@@ -35,6 +35,9 @@ look more independent than it is.
 | Acceleration | 10.071 g | **10.068 g** |
 | Source check at 12 mΩ | closes | modelled assumption |
 | Source check at 116 mΩ | **fails** | representative purchasable single string |
+
+The historical Gen5 speed is challenged by a later finite-geometry screen in the main project.
+It remains here as a reproducible regression input, not a rated speed.
 
 The velocity difference is 0.005 m/s, inside the declared 0.01 m/s regression band. That is
 model-to-model agreement, not a force, current or velocity measurement.
@@ -58,6 +61,20 @@ A1 remains **PARTIAL** because two declared field bands missed. A8 is retained a
 **superseded ngspice run** and is not presented as current. A10 shows that a purchasable
 single supercapacitor string does not source the shot. No motor, bank or track has been built
 or measured.
+
+## Independent energy and power gates
+
+`energy_closes` requires electrical input energy to cover **payload plus carriage** kinetic
+energy. `source_closes_at_peak` independently checks the Thevenin power ceiling.
+`screen_feasible` is true only when both necessary conditions pass. `energy_margin_J`
+and `moving_energy_fraction` expose the total moving-energy accounting.
+
+When either gate fails, `exit_velocity_m_s` is a hypothetical force/stroke result and must not
+be reported as attainable. Efficiencies above 100% expose an inconsistent input rather than
+being clipped or accepted. Zero energy margin is only the ideal lossless boundary; realistic
+copper, switching, friction, source and thermal losses need an explicit circuit/dynamic model.
+The electrical-input boundary must include all supplied energy and assumes no other energy
+source. Passing both gates does not validate a winding, inverter or energy store.
 
 ## Run it
 

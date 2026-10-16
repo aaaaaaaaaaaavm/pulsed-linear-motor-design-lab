@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pulsed-linear-motor-design-lab"
-version = "0.1.2"
+version = "0.1.3"
 description = "Screening calculations and a traceable VOLLEY reference case for pulsed linear motors"
 readme = "README.md"
 requires-python = ">=3.11"
-license = {text = "MIT"}
+license = {text = "CC-BY-4.0"}
 authors = [{name = "Adityavardhan Mishra"}]
 dependencies = []
 

@@ -1,5 +1,9 @@
 # Change log / audit record
 
+## 16 October 2026
+
+Separate total moving-energy and peak-power feasibility; retain failed hypothetical speeds explicitly.
+
 I record changes here by cause and consequence. Read this with `docs/PROVENANCE.md` and
 `OPEN_PROBLEMS.md`; a version number is not evidence that the hardware exists.
 

@@ -2,11 +2,11 @@
 
 I separated one reusable screening question from VOLLEY's full spacecraft-deployer model:
 given moving mass, stroke, thrust constant, sheet current, force limit, source voltage and ESR,
-what velocity is physically reachable, and can the source meet the requested peak power?
+what velocity is implied by the force/stroke model, and do total energy and peak power permit it?
 
 | | |
 |---|---|
-| Corrected VOLLEY detailed result | **16.029 m/s at 10.068 g** |
+| Historical VOLLEY detailed model point | **16.029 m/s at 10.068 g** |
 | Standalone constant-force screen | **16.024 m/s at 10.071 g** |
 | Declared regression band | 0.01 m/s and 0.01 g |
 | 12 mΩ source assumption | closes the elementary peak-power test |
@@ -23,3 +23,7 @@ FAILS for a purchasable single string. Nothing has been built or measured.
 The standalone package has no runtime dependency. The higher-fidelity reference files retain
 their exact tool versions, settings, hashes and VOLLEY commit identity under
 `reference/volley/` and `SOURCE_MANIFEST.json`.
+
+A passing peak-power ceiling is independent of `energy_closes`. `screen_feasible` requires
+both necessary checks; carriage kinetic energy is included. No finite-force, circuit, thermal
+or measured-performance validation is established by this screen.

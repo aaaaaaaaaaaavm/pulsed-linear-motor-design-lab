@@ -52,3 +52,29 @@ class ScreeningTests(unittest.TestCase):
         case["sheet_current_kA_m"] = math.inf
         with self.assertRaisesRegex(ValueError, "sheet_current_kA_m"):
             calculate(case)
+
+
+class EnergyTests(unittest.TestCase):
+    case = ScreeningTests.case
+
+    def test_impossible_energy_fails_even_when_power_passes(self):
+        case = self.case()
+        case['electrical_input_J'] = 1.0
+        result = calculate(case)
+        self.assertTrue(result['source_closes_at_peak'])
+        self.assertFalse(result['energy_closes'])
+        self.assertFalse(result['screen_feasible'])
+        self.assertLess(result['energy_margin_J'], 0)
+
+    def test_carriage_energy_is_counted(self):
+        case = self.case()
+        first = calculate(case)
+        case['electrical_input_J'] = (first['payload_kinetic_energy_J'] + first['moving_kinetic_energy_J']) / 2
+        self.assertFalse(calculate(case)['energy_closes'])
+
+    def test_lossless_boundary_and_underpowered_case(self):
+        case = self.case()
+        case['electrical_input_J'] = calculate(case)['moving_kinetic_energy_J']
+        self.assertTrue(calculate(case)['energy_closes'])
+        case['bank_esr_ohm'] = 0.116
+        self.assertFalse(calculate(case)['screen_feasible'])
