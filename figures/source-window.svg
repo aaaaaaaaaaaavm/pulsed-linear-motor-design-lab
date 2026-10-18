@@ -1,55 +1,322 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="860" viewBox="0 0 1600 860">
-<rect width="1600" height="860" fill="#07111b"/>
-<text x="72" y="78" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="24" font-weight="700" text-anchor="start">SOURCE-IMPEDANCE WINDOW</text>
-<text x="72" y="124" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="34" font-weight="600" text-anchor="start">Thevenin power collapses as ESR rises: V² / 4R.</text>
-<text x="72" y="162" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="400" text-anchor="start">The crossing is a necessary source gate, not a converter or pulse simulation.</text>
-<rect x="72" y="220" width="704" height="500" rx="18" fill="#0c1d2a" stroke="#38d6e8"/>
-<text x="100" y="264" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700" text-anchor="start">DESKTOP STAGE</text>
-<line x1="158" y1="616" x2="732" y2="616" stroke="#365568"/>
-<line x1="158" y1="298" x2="158" y2="616" stroke="#365568"/>
-<line x1="158.0" y1="616" x2="158.0" y2="623" stroke="#365568"/>
-<text x="158.0" y="645" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="400" text-anchor="middle">0</text>
-<line x1="272.8" y1="616" x2="272.8" y2="623" stroke="#365568"/>
-<text x="272.8" y="645" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="400" text-anchor="middle">30</text>
-<line x1="387.6" y1="616" x2="387.6" y2="623" stroke="#365568"/>
-<text x="387.6" y="645" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="400" text-anchor="middle">60</text>
-<line x1="502.4" y1="616" x2="502.4" y2="623" stroke="#365568"/>
-<text x="502.4" y="645" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="400" text-anchor="middle">90</text>
-<line x1="617.2" y1="616" x2="617.2" y2="623" stroke="#365568"/>
-<text x="617.2" y="645" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="400" text-anchor="middle">120</text>
-<line x1="732.0" y1="616" x2="732.0" y2="623" stroke="#365568"/>
-<text x="732.0" y="645" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="400" text-anchor="middle">150</text>
-<line x1="158" y1="609.1" x2="732" y2="609.1" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="8 8"/>
-<polyline points="177.1,298.0 184.8,388.9 192.4,439.3 200.1,471.5 207.7,493.7 215.4,510.0 223.1,522.5 230.7,532.3 238.4,540.3 246.0,546.9 253.7,552.4 261.3,557.1 269.0,561.2 276.6,564.7 284.3,567.8 291.9,570.6 299.6,573.0 307.2,575.2 314.9,577.2 322.5,579.0 330.2,580.7 337.9,582.2 345.5,583.6 353.2,584.8 360.8,586.0 368.5,587.1 376.1,588.1 383.8,589.1 391.4,589.9 399.1,590.8 406.7,591.5 414.4,592.3 422.0,593.0 429.7,593.6 437.3,594.2 445.0,594.8 452.7,595.4 460.3,595.9 468.0,596.4 475.6,596.8 483.3,597.3 490.9,597.7 498.6,598.1 506.2,598.5 513.9,598.9 521.5,599.3 529.2,599.6 536.8,599.9 544.5,600.3 552.1,600.6 559.8,600.9 567.5,601.1 575.1,601.4 582.8,601.7 590.4,601.9 598.1,602.2 605.7,602.4 613.4,602.6 621.0,602.9 628.7,603.1 636.3,603.3 644.0,603.5 651.6,603.7 659.3,603.9 666.9,604.0 674.6,604.2 682.3,604.4 689.9,604.6 697.6,604.7 705.2,604.9 712.9,605.0 720.5,605.2 728.2,605.3" fill="none" stroke="#38d6e8" stroke-width="4"/>
-<circle cx="464.1" cy="596.1" r="9" fill="#e8f0f7" stroke="#38d6e8" stroke-width="4"/>
-<text x="158" y="284" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="400" text-anchor="start">power ceiling, max 115.2 kW</text>
-<text x="732" y="599.0989583333334" fill="#ff6b6b" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="650" text-anchor="end">required 2.5 kW</text>
-<text x="732" y="674" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="500" text-anchor="end">bank ESR [mΩ]</text>
-<text x="100" y="672" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="17" font-weight="650" text-anchor="start">committed: 80 mΩ → 7.2 kW</text>
-<text x="748" y="672" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="17" font-weight="700" text-anchor="end">gate closes below 230.4 mΩ</text>
-<rect x="816" y="220" width="704" height="500" rx="18" fill="#0c1d2a" stroke="#ffb454"/>
-<text x="844" y="264" fill="#ffb454" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700" text-anchor="start">VOLLEY REFERENCE</text>
-<line x1="902" y1="616" x2="1476" y2="616" stroke="#365568"/>
-<line x1="902" y1="298" x2="902" y2="616" stroke="#365568"/>
-<line x1="902.0" y1="616" x2="902.0" y2="623" stroke="#365568"/>
-<text x="902.0" y="645" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="400" text-anchor="middle">0</text>
-<line x1="1016.8" y1="616" x2="1016.8" y2="623" stroke="#365568"/>
-<text x="1016.8" y="645" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="400" text-anchor="middle">30</text>
-<line x1="1131.6" y1="616" x2="1131.6" y2="623" stroke="#365568"/>
-<text x="1131.6" y="645" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="400" text-anchor="middle">60</text>
-<line x1="1246.4" y1="616" x2="1246.4" y2="623" stroke="#365568"/>
-<text x="1246.4" y="645" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="400" text-anchor="middle">90</text>
-<line x1="1361.2" y1="616" x2="1361.2" y2="623" stroke="#365568"/>
-<text x="1361.2" y="645" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="400" text-anchor="middle">120</text>
-<line x1="1476.0" y1="616" x2="1476.0" y2="623" stroke="#365568"/>
-<text x="1476.0" y="645" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="400" text-anchor="middle">150</text>
-<line x1="902" y1="595.3" x2="1476" y2="595.3" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="8 8"/>
-<polyline points="921.1,298.0 928.8,388.9 936.4,439.3 944.1,471.5 951.7,493.7 959.4,510.0 967.1,522.5 974.7,532.3 982.4,540.3 990.0,546.9 997.7,552.4 1005.3,557.1 1013.0,561.2 1020.6,564.7 1028.3,567.8 1035.9,570.6 1043.6,573.0 1051.2,575.2 1058.9,577.2 1066.5,579.0 1074.2,580.7 1081.9,582.2 1089.5,583.6 1097.2,584.8 1104.8,586.0 1112.5,587.1 1120.1,588.1 1127.8,589.1 1135.4,589.9 1143.1,590.8 1150.7,591.5 1158.4,592.3 1166.0,593.0 1173.7,593.6 1181.3,594.2 1189.0,594.8 1196.7,595.4 1204.3,595.9 1212.0,596.4 1219.6,596.8 1227.3,597.3 1234.9,597.7 1242.6,598.1 1250.2,598.5 1257.9,598.9 1265.5,599.3 1273.2,599.6 1280.8,599.9 1288.5,600.3 1296.1,600.6 1303.8,600.9 1311.5,601.1 1319.1,601.4 1326.8,601.7 1334.4,601.9 1342.1,602.2 1349.7,602.4 1357.4,602.6 1365.0,602.9 1372.7,603.1 1380.3,603.3 1388.0,603.5 1395.6,603.7 1403.3,603.9 1410.9,604.0 1418.6,604.2 1426.3,604.4 1433.9,604.6 1441.6,604.7 1449.2,604.9 1456.9,605.0 1464.5,605.2 1472.2,605.3" fill="none" stroke="#ffb454" stroke-width="4"/>
-<circle cx="947.9" cy="483.5" r="9" fill="#e8f0f7" stroke="#ffb454" stroke-width="4"/>
-<text x="902" y="284" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="400" text-anchor="start">power ceiling, max 460.8 kW</text>
-<text x="1476" y="585.296875" fill="#ff6b6b" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="650" text-anchor="end">required 30.0 kW</text>
-<text x="1476" y="674" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="500" text-anchor="end">bank ESR [mΩ]</text>
-<text x="844" y="672" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="17" font-weight="650" text-anchor="start">committed: 12 mΩ → 192.0 kW</text>
-<text x="1492" y="672" fill="#ffb454" font-family="Inter,Segoe UI,sans-serif" font-size="17" font-weight="700" text-anchor="end">gate closes below 76.8 mΩ</text>
-<text x="1494" y="818" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">SOURCE CEILING ONLY · MODEL OUTPUT</text>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="316.8pt" viewBox="0 0 576 316.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 316.8
+L 576 316.8
+L 576 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 57.6 243.936
+L 558.72 243.936
+L 558.72 38.016
+L 57.6 38.016
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m3ff86016a6" d="M 0 0
+L 0 3.5
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m3ff86016a6" x="64.669091" y="243.936" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="64.669091" y="258.534438" transform="rotate(-0 64.669091 258.534438)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m3ff86016a6" x="127.505455" y="243.936" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="127.505455" y="258.534438" transform="rotate(-0 127.505455 258.534438)">20</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m3ff86016a6" x="190.341818" y="243.936" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="190.341818" y="258.534438" transform="rotate(-0 190.341818 258.534438)">40</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m3ff86016a6" x="253.178182" y="243.936" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="253.178182" y="258.534438" transform="rotate(-0 253.178182 258.534438)">60</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m3ff86016a6" x="316.014545" y="243.936" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="316.014545" y="258.534438" transform="rotate(-0 316.014545 258.534438)">80</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m3ff86016a6" x="378.850909" y="243.936" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="378.850909" y="258.534438" transform="rotate(-0 378.850909 258.534438)">100</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m3ff86016a6" x="441.687273" y="243.936" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="441.687273" y="258.534438" transform="rotate(-0 441.687273 258.534438)">120</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m3ff86016a6" x="504.523636" y="243.936" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="504.523636" y="258.534438" transform="rotate(-0 504.523636 258.534438)">140</text>
+     </g>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="308.16" y="272.212563" transform="rotate(-0 308.16 272.212563)">Assumed bank ESR (mΩ)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_9">
+      <defs>
+       <path id="mac8dbd2779" d="M 0 0
+L -3.5 0
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mac8dbd2779" x="57.6" y="235.597165" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="50.6" y="239.396384" transform="rotate(-0 50.6 239.396384)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#mac8dbd2779" x="57.6" y="194.750558" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="50.6" y="198.549777" transform="rotate(-0 50.6 198.549777)">100</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#mac8dbd2779" x="57.6" y="153.903951" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="50.6" y="157.70317" transform="rotate(-0 50.6 157.70317)">200</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#mac8dbd2779" x="57.6" y="113.057344" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="50.6" y="116.856563" transform="rotate(-0 50.6 116.856563)">300</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#mac8dbd2779" x="57.6" y="72.210737" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="50.6" y="76.009956" transform="rotate(-0 50.6 76.009956)">400</text>
+     </g>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="25.432812" y="140.976" transform="rotate(-90 25.432812 140.976)">Power (kW)</text>
+    </g>
+   </g>
+   <g id="line2d_14">
+    <path d="M 80.378182 188.541874
+L 83.435656 196.208185
+L 86.49313 201.726448
+L 89.550604 205.888528
+L 92.608078 209.139662
+L 95.665552 211.749416
+L 98.723026 213.890545
+L 101.7805 215.678874
+L 104.837974 217.194965
+L 107.895448 218.496584
+L 110.952923 219.626235
+L 117.067871 221.490046
+L 123.182819 222.964303
+L 129.297767 224.159582
+L 135.412715 225.148226
+L 144.585137 226.34751
+L 153.757559 227.299842
+L 165.987456 228.301392
+L 178.217352 229.087195
+L 193.504722 229.859654
+L 211.849567 230.574788
+L 236.309359 231.290508
+L 266.8841 231.941671
+L 306.631263 232.542159
+L 358.608322 233.082374
+L 428.930226 233.567863
+L 526.769396 233.997521
+L 535.941818 234.028655
+L 535.941818 234.028655
+" clip-path="url(#p287233c217)" style="fill: none; stroke: #0072b2; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_15">
+    <path d="M 57.6 234.576
+L 558.72 234.576
+" clip-path="url(#p287233c217)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #0072b2"/>
+   </g>
+   <g id="line2d_16">
+    <path d="M 80.378182 47.376
+L 83.435656 78.041246
+L 86.49313 100.114297
+L 89.550604 116.762616
+L 92.608078 129.767152
+L 95.665552 140.206166
+L 98.723026 148.770683
+L 101.7805 155.924002
+L 104.837974 161.988363
+L 107.895448 167.194839
+L 110.952923 171.713444
+L 114.010397 175.672051
+L 117.067871 179.168687
+L 120.125345 182.279763
+L 123.182819 185.065717
+L 126.240293 187.574984
+L 129.297767 189.846833
+L 132.355241 191.913437
+L 135.412715 193.801407
+L 138.470189 195.532946
+L 144.585137 198.598546
+L 150.700085 201.228349
+L 156.815034 203.509118
+L 162.929982 205.506013
+L 169.04493 207.268929
+L 175.159878 208.836713
+L 184.3323 210.887955
+L 193.504722 212.647121
+L 202.677145 214.172449
+L 211.849567 215.507657
+L 224.079463 217.048915
+L 236.309359 218.370535
+L 251.59673 219.779368
+L 266.8841 220.975187
+L 285.228944 222.191356
+L 306.631263 223.377142
+L 331.091056 224.499043
+L 358.608322 225.538
+L 392.240537 226.570788
+L 431.9877 227.547523
+L 477.849811 228.441015
+L 532.884344 229.282156
+L 535.941818 229.323126
+L 535.941818 229.323126
+" clip-path="url(#p287233c217)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #d55e00; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_17">
+    <path d="M 57.6 223.343183
+L 558.72 223.343183
+" clip-path="url(#p287233c217)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #d55e00"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 57.6 243.936
+L 57.6 38.016
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 57.6 243.936
+L 558.72 243.936
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="308.16" y="32.016" transform="rotate(-0 308.16 32.016)">Source peak-power screen</text>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_18">
+     <path d="M 418.21 48.49475
+L 426.21 48.49475
+L 434.21 48.49475
+" style="fill: none; stroke: #0072b2; stroke-width: 1.5; stroke-linecap: square"/>
+    </g>
+    <g id="text_17">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start" x="440.61" y="51.29475" transform="rotate(-0 440.61 51.29475)">Desktop stage ceiling</text>
+    </g>
+    <g id="line2d_19">
+     <path d="M 418.21 60.23725
+L 426.21 60.23725
+L 434.21 60.23725
+" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #d55e00; stroke-width: 1.5"/>
+    </g>
+    <g id="text_18">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start" x="440.61" y="63.03725" transform="rotate(-0 440.61 63.03725)">Historical Gen5 case ceiling</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 8px; font-family: 'DejaVu Sans'" transform="translate(11.52 298.258)">Curves: V²/(4R); dotted lines: requested peak power. The energy gate is separate.</text>
+   <text style="font-size: 8px; font-family: 'DejaVu Sans'" transform="translate(11.52 307.21625)">Neither a ceiling crossing nor this Thevenin model establishes a selected bank or converter.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p287233c217">
+   <rect x="57.6" y="38.016" width="501.12" height="205.92"/>
+  </clipPath>
+ </defs>
 </svg>

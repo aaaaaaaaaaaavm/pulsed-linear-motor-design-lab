@@ -13,6 +13,7 @@ authors = [{name = "Adityavardhan Mishra"}]
 dependencies = []
 
 [project.optional-dependencies]
+figures = ["matplotlib>=3.8", "numpy>=2"]
 dev = []
 reference = ["numpy>=2,<3", "matplotlib>=3.8", "magpylib>=5,<6"]
 fem = ["numpy==2.3.5", "gmsh==4.15.2", "scikit-fem==12.0.2"]
