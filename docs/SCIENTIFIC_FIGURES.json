@@ -1,0 +1,42 @@
+{
+  "revision": "2026-10-19 scientific presentation edition",
+  "scope": "Selected current figure sets only. Retained historical graphics are not automatically certified compliant.",
+  "figures": [
+    {
+      "evidence_class": "Computed plot",
+      "caption": "Analytical overview: design screen",
+      "limitations": "First-order source-backed screen, not native mission/hardware validation.",
+      "sources": {
+        "tools/generate_readme_figure.py": "7136d139175877a2e78dfcd09299a4fa1eba3076b749b70bf62c11c70bf20be5",
+        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9"
+      },
+      "exports": {
+        "figures/design-screen.svg": "ba627336c7b2f110a25d439393af3a4caf5016fb2c32b9aeb245f3d1aa2024f2"
+      }
+    },
+    {
+      "evidence_class": "Computed plot",
+      "caption": "Analytical overview: force energy",
+      "limitations": "First-order source-backed screen, not native mission/hardware validation.",
+      "sources": {
+        "tools/generate_readme_figure.py": "7136d139175877a2e78dfcd09299a4fa1eba3076b749b70bf62c11c70bf20be5",
+        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9"
+      },
+      "exports": {
+        "figures/force-energy.svg": "cfccaaa38b04d421e9d1797fd718fb320438b3eac2cf7c4e8e5ae141bfcd075a"
+      }
+    },
+    {
+      "evidence_class": "Computed plot",
+      "caption": "Analytical overview: source window",
+      "limitations": "First-order source-backed screen, not native mission/hardware validation.",
+      "sources": {
+        "tools/generate_readme_figure.py": "7136d139175877a2e78dfcd09299a4fa1eba3076b749b70bf62c11c70bf20be5",
+        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9"
+      },
+      "exports": {
+        "figures/source-window.svg": "f1519d1a8021cf7ed803bde0a0c7533d21b5821e6a84f732a01e3654a6b2d734"
+      }
+    }
+  ]
+}
