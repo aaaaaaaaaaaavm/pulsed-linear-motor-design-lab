@@ -1,6 +1,6 @@
 # Pulsed Linear Motor Design Lab
 
-<p align="center"><img src="figures/design-screen.svg" alt="Pulsed linear motor first-order design screen for the desktop and VOLLEY reference cases" width="100%"></p>
+<p align="center"><a href="figures/design-screen.svg"><img src="figures/design-screen.svg" alt="Pulsed linear motor first-order design screen for the desktop and VOLLEY reference cases" width="100%"></a></p>
 
 [![CI](https://github.com/aaaaaaaaaaaavm/pulsed-linear-motor-design-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/aaaaaaaaaaaavm/pulsed-linear-motor-design-lab/actions/workflows/ci.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
@@ -43,13 +43,13 @@ The velocity difference is 0.005 m/s, inside the declared 0.01 m/s regression ba
 model-to-model agreement, not a force, current or velocity measurement.
 
 <p align="center">
-  <img src="figures/force-energy.svg" alt="Force and energy accounting for the desktop and VOLLEY screening cases" width="49%">
-  <img src="figures/source-window.svg" alt="Thevenin source-power ceiling against bank ESR for both committed cases" width="49%">
+  <a href="figures/force-energy.svg"><img src="figures/force-energy.svg" alt="Force and energy accounting for the desktop and VOLLEY screening cases" width="100%"></a>
+  <a href="figures/source-window.svg"><img src="figures/source-window.svg" alt="Thevenin source-power ceiling against bank ESR for both committed cases" width="100%"></a>
 </p>
 
-<p align="center"><sub>Left: what the field accelerates and where the assumed input energy goes.
-Right: the source-impedance boundary that decides whether the requested peak power is even
-available. Both are regenerated from the committed case files.</sub></p>
+<p align="center"><sub>The energy plots distinguish electrical input, total moving kinetic energy and payload
+kinetic energy. The source plot compares the Thevenin ceiling with requested peak power.
+Both use the two committed cases; no loss allocation or hardware capability is established.</sub></p>
 
 <p align="center"><img src="reference/volley/paper/figures/F01_shot.png" alt="Corrected VOLLEY shot calculation" width="100%"></p>
 
@@ -124,6 +124,8 @@ not license patent rights, which is why a patent-granting licence was not used h
 
 Install `python -m pip install -e ".[figures]"`, then run
 `python tools/generate_readme_figure.py`. Figures are plain vector exports of local
-case calculations, with labelled axes and explicit model boundaries.
+case calculations at a 180 mm report width, with 10 pt plot labels and explicit model boundaries.
+Each figure is exported as editable SVG, embedded-font PDF and 300 dpi PNG.
+The local case files, calculation modules, plotting source and style are recorded in the figure manifest.
 
 [Scientific figures and documentation conventions](docs/FIGURE_STANDARD.md) · [Released figure sources](docs/SCIENTIFIC_FIGURES.json)

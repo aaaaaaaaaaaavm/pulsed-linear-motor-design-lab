@@ -1,42 +1,69 @@
 {
-  "revision": "2026-10-19 scientific presentation edition",
+  "revision": "2026-10-23 current scientific presentation edition",
   "scope": "Selected current figure sets only. Retained historical graphics are not automatically certified compliant.",
   "figures": [
     {
-      "evidence_class": "Computed plot",
-      "caption": "Analytical overview: design screen",
+      "evidence_class": "Computed analytical screen",
+      "caption": "Constant-force stroke/speed and necessary energy screens for the desktop_stage and historical volley_reference inputs; 23 Oct 2026 presentation.",
       "limitations": "First-order source-backed screen, not native mission/hardware validation.",
       "sources": {
-        "tools/generate_readme_figure.py": "7136d139175877a2e78dfcd09299a4fa1eba3076b749b70bf62c11c70bf20be5",
-        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9"
+        "tools/generate_readme_figure.py": "c7411f26faeeea850ed81f6520d27a57fb65a2d30f68206e18f6cb741afba09f",
+        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9",
+        "cases/desktop_stage.json": "78e5e1b888a34ed25f34b40de67bab110e80e111c38d3a9ee2603ae891a14fbd",
+        "cases/volley_reference.json": "aac1e723a0242c1fccbf8a285ffaca0934720997e789d21bfd1931039f7a80b6",
+        "src/plmd/__init__.py": "3dbb7abc5ed48959049a6329ad300f2cd4e3ff27e75e10e90e93439e780f52be",
+        "src/plmd/core.py": "1bdc9a29ef6e28455071009f87dbc9a9694da6083265aa4bba6009ceb2ef580c"
       },
       "exports": {
-        "figures/design-screen.svg": "ba627336c7b2f110a25d439393af3a4caf5016fb2c32b9aeb245f3d1aa2024f2"
+        "figures/design-screen.svg": "12cc440caf9c83e73f017061d628f94e16e563f15b79962f289cc24b0d1f8f97",
+        "figures/design-screen.pdf": "a8fe352b5cd2684a14d5ed29f78ffb40370912cfd4b8b0b0970721aba983b20a",
+        "figures/design-screen.png": "a396d104913ce19d7d3be7c0a82cd46ad2dcba6b7cc58e0743dff8cc7b252610"
       }
     },
     {
-      "evidence_class": "Computed plot",
-      "caption": "Analytical overview: force energy",
+      "evidence_class": "Computed analytical screen",
+      "caption": "Electrical input, moving kinetic energy and payload kinetic energy for the same two committed cases; no inferred loss allocation.",
       "limitations": "First-order source-backed screen, not native mission/hardware validation.",
       "sources": {
-        "tools/generate_readme_figure.py": "7136d139175877a2e78dfcd09299a4fa1eba3076b749b70bf62c11c70bf20be5",
-        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9"
+        "tools/generate_readme_figure.py": "c7411f26faeeea850ed81f6520d27a57fb65a2d30f68206e18f6cb741afba09f",
+        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9",
+        "cases/desktop_stage.json": "78e5e1b888a34ed25f34b40de67bab110e80e111c38d3a9ee2603ae891a14fbd",
+        "cases/volley_reference.json": "aac1e723a0242c1fccbf8a285ffaca0934720997e789d21bfd1931039f7a80b6",
+        "src/plmd/__init__.py": "3dbb7abc5ed48959049a6329ad300f2cd4e3ff27e75e10e90e93439e780f52be",
+        "src/plmd/core.py": "1bdc9a29ef6e28455071009f87dbc9a9694da6083265aa4bba6009ceb2ef580c"
       },
       "exports": {
-        "figures/force-energy.svg": "cfccaaa38b04d421e9d1797fd718fb320438b3eac2cf7c4e8e5ae141bfcd075a"
+        "figures/force-energy.svg": "17906443d9102f66b20bea70c2c62571fcde4676e43d249c48732827421581ac",
+        "figures/force-energy.pdf": "f5cf20d86f1f62532215bbed7ba4db3734f9ad1ae7a9348f5e52816ad405c8e9",
+        "figures/force-energy.png": "df0f863f2dabcddd414ff3abe626cddae638a085d26ff9eaee3a1cbcdc714d52"
       }
     },
     {
-      "evidence_class": "Computed plot",
-      "caption": "Analytical overview: source window",
+      "evidence_class": "Computed analytical screen",
+      "caption": "Thevenin maximum-power ceiling V\u00b2/(4R) over 5\u2013150 m\u03a9, compared with each case requested peak power; energy closure is separate.",
       "limitations": "First-order source-backed screen, not native mission/hardware validation.",
       "sources": {
-        "tools/generate_readme_figure.py": "7136d139175877a2e78dfcd09299a4fa1eba3076b749b70bf62c11c70bf20be5",
-        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9"
+        "tools/generate_readme_figure.py": "c7411f26faeeea850ed81f6520d27a57fb65a2d30f68206e18f6cb741afba09f",
+        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9",
+        "cases/desktop_stage.json": "78e5e1b888a34ed25f34b40de67bab110e80e111c38d3a9ee2603ae891a14fbd",
+        "cases/volley_reference.json": "aac1e723a0242c1fccbf8a285ffaca0934720997e789d21bfd1931039f7a80b6",
+        "src/plmd/__init__.py": "3dbb7abc5ed48959049a6329ad300f2cd4e3ff27e75e10e90e93439e780f52be",
+        "src/plmd/core.py": "1bdc9a29ef6e28455071009f87dbc9a9694da6083265aa4bba6009ceb2ef580c"
       },
       "exports": {
-        "figures/source-window.svg": "f1519d1a8021cf7ed803bde0a0c7533d21b5821e6a84f732a01e3654a6b2d734"
+        "figures/source-window.svg": "4a224a9ad46f98fcaabf292671b58cb80bba38cc51ee814740349b08ee280220",
+        "figures/source-window.pdf": "9a0fdb2038fe826bb32bccd61c24e2bd9cd9cb7d68613f41d92b0d5c3a18551e",
+        "figures/source-window.png": "a7c025efd8b0b8c4cf665dc7eed53ae102c1c2001b7127e76ef3f3c1da56b6f3"
       }
     }
-  ]
+  ],
+  "presentation": {
+    "nominal_width_mm": 180,
+    "software": {
+      "Python": "3.12.14",
+      "Matplotlib": "3.10.8",
+      "NumPy": "2.3.5"
+    },
+    "historical_assets": "Retained dated source snapshots are outside this visual review."
+  }
 }
